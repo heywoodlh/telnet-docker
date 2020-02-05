@@ -3,7 +3,7 @@ FROM alpine
 LABEL maintainer="heywoodlh"
 
 #Telnet and netcat installation
-RUN apk add busybox-extras netcat-openbsd
+RUN apk add busybox-extras netcat-openbsd nmap
 
 #Masscan installation
 RUN apk add clang gcc libc-dev git make libc6-compat libpcap-dev linux-headers && \
